@@ -1,0 +1,17 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.69); justify-content: center;">
+        <engine:VisualElement style="flex-grow: 0; border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; background-color: rgba(164, 111, 4, 0.79); align-self: center; justify-content: flex-end; width: 89%; height: 49%;">
+            <engine:VisualElement name="InfoWrapper" style="flex-grow: 1; align-items: center;">
+                <engine:Label text="Title" name="title" style="-unity-text-align: upper-center; font-size: 23px; -unity-font-style: bold; text-overflow: ellipsis; width: 87%;" />
+                <engine:Label text="Other&#10;" name="other" style="-unity-text-align: upper-center; font-size: 10px; text-overflow: ellipsis;" />
+            </engine:VisualElement>
+            <engine:VisualElement name="playerWrapper" style="flex-grow: 1;">
+                <engine:Slider value="42" high-value="100" />
+                <engine:VisualElement name="buttonWrapper" style="flex-grow: 1; align-items: center; justify-content: space-around;">
+                    <engine:Button text="Play&#10;/Pause" name="playpause" />
+                    <engine:Button text="cancel" name="cancel" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

@@ -1,0 +1,5 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/_ProjectAssets/UI/CustomElements/USS/LocationsList.uss?fileID=7433441132597879392&amp;guid=42f8b36bf2b4a4742b170bec87c5401c&amp;type=3#LocationsList" />
+    <engine:Label text="Title" name="title" />
+    <engine:ScrollView mode="Horizontal" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden" style="height: 100px;" />
+</engine:UXML>

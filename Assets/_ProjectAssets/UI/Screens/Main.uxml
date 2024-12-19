@@ -1,0 +1,18 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/_ProjectAssets/UI/Screens/USS/main.uss?fileID=7433441132597879392&amp;guid=9666c587862a9fd4a865f4c2bbd183b8&amp;type=3#main" />
+    <engine:VisualElement name="root" style="flex-grow: 1; background-color: rgb(0, 0, 0);">
+        <engine:VisualElement name="topBar" class="bar" style="color: rgb(255, 23, 23);">
+            <engine:Label text=" Z" style="color: rgb(255, 255, 255); font-size: 49px; -unity-font-style: bold;" />
+        </engine:VisualElement>
+        <engine:VisualElement style="flex-grow: 1;">
+            <LocationsList name="LocationsList" />
+            <LocationsList name="LocationsList" tag="historical" />
+            <LocationsList name="LocationsList" tag="artistical" />
+        </engine:VisualElement>
+        <engine:VisualElement name="botBar" class="bar">
+            <engine:Button name="plan" enable-rich-text="false" style="background-image: url(&quot;project://database/Assets/_ProjectAssets/Textures/Icons/clipboard.png?fileID=2800000&amp;guid=54132108e8f17854f9f2d0dc50200da1&amp;type=3#clipboard&quot;); background-size: 83% 83%;" />
+            <engine:Button name="map" enable-rich-text="false" style="background-image: url(&quot;project://database/Assets/_ProjectAssets/Textures/Icons/map.png?fileID=2800000&amp;guid=f1fea15e07b943343af4638ab90f5141&amp;type=3#map&quot;); background-size: 69% 69%;" />
+            <engine:Button name="profile" enable-rich-text="false" style="background-image: url(&quot;project://database/Assets/_ProjectAssets/Textures/Icons/user.png?fileID=2800000&amp;guid=ad39521f57436244fac1d7ee852a7067&amp;type=3#user&quot;); background-size: 72% 72%;" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

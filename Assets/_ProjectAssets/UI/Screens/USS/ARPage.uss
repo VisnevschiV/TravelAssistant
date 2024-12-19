@@ -1,0 +1,15 @@
+.bar {
+    height: 295px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#empty {
+    flex-grow: 1;
+}
+
+#botBar > Button {
+    width: 185px;
+    height: 165px;
+}

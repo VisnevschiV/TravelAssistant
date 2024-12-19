@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 892a6b55b040b4144982fcda69322287, type: 3}
+  m_Name: LocationData
+  m_EditorClassIdentifier: 
+  locations:
+  - name: OmarGrafitty
+    description: The first AR experience we made, wich is cool and special for us
+      so i would guess we would like to leave it as it is forever, without any updates.
+      The main reason we chose this grafitty is that it's big and my girlifriends's
+      job is close
+    images: []
+    audioGuide: {fileID: 0}
+    audioTranscript: []
+    arExperience: {fileID: 0}
+    tags: 0000000002000000
+    isLiked: 0
+  - name: Old Town (Altstadt)
+    description: "The historic heart of Zurich, featuring cobblestone streets, medieval
+      buildings, and landmarks like Grossm\xFCnster and Fraum\xFCnster Churches.
+      It\u2019s a lively area filled with shops, restaurants, and cultural spots."
+    images:
+    - {fileID: 2800000, guid: d2e4c0253ae6c8d4fa2e8b2c1e5a2660, type: 3}
+    - {fileID: 2800000, guid: 59418ff871124bb4f88bc933058987ba, type: 3}
+    audioGuide: {fileID: 8300000, guid: 17780cafc93699641a6d230dc25c2fe9, type: 3}
+    audioTranscript: []
+    arExperience: {fileID: 0}
+    tags: 0000000001000000
+    isLiked: 0
+  - name: "Lake Zurich (Z\xFCrichsee)"
+    description: A picturesque lake surrounded by promenades and parks, offering
+      activities like boat rides, swimming, or simply relaxing while enjoying views
+      of the water and distant Alps.
+    images:
+    - {fileID: 2800000, guid: a12aaa8c9c7e9a742a446d4875c42091, type: 3}
+    - {fileID: 2800000, guid: c23676e1a99e7d3438e60b6b940557e8, type: 3}
+    audioGuide: {fileID: 0}
+    audioTranscript: []
+    arExperience: {fileID: 0}
+    tags: 
+    isLiked: 0
+  - name: Bahnhofstrasse
+    description: "Zurich\u2019s famous shopping street, known for its luxury boutiques,
+      high-end brands, and charming cafes, making it a hub for fashion and elegance
+      in the city."
+    images:
+    - {fileID: 2800000, guid: 66a74a2eca4ede94e92745aa81f4e3ed, type: 3}
+    - {fileID: 2800000, guid: c75b390f4ed2cdb458c4c71339bc66c2, type: 3}
+    audioGuide: {fileID: 0}
+    audioTranscript: []
+    arExperience: {fileID: 0}
+    tags: 000000000100000002000000
+    isLiked: 1
+  - name: Uetliberg Mountain
+    description: A popular destination for outdoor enthusiasts, offering hiking trails,
+      biking paths, and breathtaking panoramic views of Zurich, the lake, and the
+      Alps.
+    images: []
+    audioGuide: {fileID: 0}
+    audioTranscript: []
+    arExperience: {fileID: 0}
+    tags: 0000000002000000
+    isLiked: 0
+  - name: Kunsthaus Zurich
+    description: A renowned art museum housing an impressive collection of classic
+      and modern artworks, including masterpieces by Van Gogh, Monet, and Swiss artists,
+      alongside contemporary exhibitions.
+    images:
+    - {fileID: 2800000, guid: b155a470578151d4e98dafddcfd34fe4, type: 3}
+    - {fileID: 2800000, guid: 5cd058ee11ed4054198ef722b125a1ae, type: 3}
+    audioGuide: {fileID: 0}
+    audioTranscript: []
+    arExperience: {fileID: 0}
+    tags: 000000000100000002000000
+    isLiked: 0

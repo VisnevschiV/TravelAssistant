@@ -1,0 +1,20 @@
+.bar {
+    height: 70px;
+    background-color: rgb(0, 0, 0);
+}
+
+#botBar {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#botBar > Button {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(190, 190, 190, 0.98);
+}
+
+.scrollContainer {
+    height: 130px;
+}

@@ -1,0 +1,5 @@
+#title {
+    -unity-text-align: middle-left;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+}

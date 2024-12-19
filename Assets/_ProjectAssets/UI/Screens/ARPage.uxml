@@ -1,0 +1,12 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/_ProjectAssets/UI/Screens/USS/ARPage.uss?fileID=7433441132597879392&amp;guid=8a9841dab8077e444af97586e9163a93&amp;type=3#ARPage" />
+    <engine:VisualElement name="root" style="flex-grow: 1;">
+        <engine:VisualElement name="topBar" class="bar" />
+        <engine:VisualElement name="empty" />
+        <engine:VisualElement name="botBar" class="bar">
+            <engine:Button text="back" name="back" />
+            <engine:Button text="record" name="recordButton" style="width: 172px; height: 163px; border-top-left-radius: 57px; border-top-right-radius: 57px; border-bottom-right-radius: 57px; border-bottom-left-radius: 57px;" />
+            <engine:Button text="sound" name="sound" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>
