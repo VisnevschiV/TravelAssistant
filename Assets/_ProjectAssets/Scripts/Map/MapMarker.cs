@@ -2,8 +2,14 @@ using UnityEngine;
 
 public class MapMarker : MonoBehaviour
 {
+    public Location myLocation;
+
+    public void SetLocation(Location location)
+    {
+        myLocation = location;
+    }
     public void OnClick()
     {
-        Debug.Log("click");
+        PageManager.Instance.ShowMapPopUp(myLocation);
     }
 }

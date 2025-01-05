@@ -23,6 +23,7 @@ MonoBehaviour:
     audioTranscript: []
     arExperience: {fileID: 0}
     tags: 0000000002000000
+    mapPosition: 47.37734994545899, 8.523340213259305
     isLiked: 0
   - name: Old Town (Altstadt)
     description: "The historic heart of Zurich, featuring cobblestone streets, medieval
@@ -35,6 +36,7 @@ MonoBehaviour:
     audioTranscript: []
     arExperience: {fileID: 0}
     tags: 0000000001000000
+    mapPosition: 
     isLiked: 0
   - name: "Lake Zurich (Z\xFCrichsee)"
     description: A picturesque lake surrounded by promenades and parks, offering
@@ -47,6 +49,7 @@ MonoBehaviour:
     audioTranscript: []
     arExperience: {fileID: 0}
     tags: 
+    mapPosition: 
     isLiked: 0
   - name: Bahnhofstrasse
     description: "Zurich\u2019s famous shopping street, known for its luxury boutiques,
@@ -59,6 +62,7 @@ MonoBehaviour:
     audioTranscript: []
     arExperience: {fileID: 0}
     tags: 000000000100000002000000
+    mapPosition: 
     isLiked: 1
   - name: Uetliberg Mountain
     description: A popular destination for outdoor enthusiasts, offering hiking trails,
@@ -69,6 +73,7 @@ MonoBehaviour:
     audioTranscript: []
     arExperience: {fileID: 0}
     tags: 0000000002000000
+    mapPosition: 
     isLiked: 0
   - name: Kunsthaus Zurich
     description: A renowned art museum housing an impressive collection of classic
@@ -81,4 +86,5 @@ MonoBehaviour:
     audioTranscript: []
     arExperience: {fileID: 0}
     tags: 000000000100000002000000
+    mapPosition: 
     isLiked: 0

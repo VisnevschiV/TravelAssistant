@@ -1,0 +1,21 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.69); justify-content: center;">
+        <engine:VisualElement style="flex-grow: 0; border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; background-color: rgba(164, 111, 4, 0.79); width: 89%; height: 49%; align-self: center;">
+            <engine:VisualElement name="imageWrapper" style="flex-grow: 1; padding-top: 23px;">
+                <engine:VisualElement name="img" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/_ProjectAssets/Textures/Utils/no-img.jpg?fileID=2800000&amp;guid=de07a332191db3442b281bf136fc71a3&amp;type=3#no-img&quot;); width: 178px; height: 116px; align-self: center;" />
+            </engine:VisualElement>
+            <engine:Label text="Title" name="title" style="-unity-text-align: upper-center; font-size: 23px; -unity-font-style: bold; text-overflow: ellipsis; width: 87%; align-self: center;" />
+            <engine:Label text="Other&#10;" name="other" style="-unity-text-align: upper-center; font-size: 10px; text-overflow: ellipsis; align-self: center;" />
+            <engine:VisualElement name="tags" style="flex-grow: 1; flex-direction: row; height: 50px;">
+                <engine:VisualElement style="flex-grow: 0; background-color: rgba(0, 0, 0, 0.95); width: 31px; height: 31px; margin-left: 15px;" />
+                <engine:VisualElement style="flex-grow: 0; background-color: rgba(0, 0, 0, 0.95); width: 31px; height: 31px; margin-left: 15px;" />
+                <engine:VisualElement style="flex-grow: 0; background-color: rgba(0, 0, 0, 0.95); width: 31px; height: 31px; margin-left: 15px;" />
+                <engine:VisualElement style="flex-grow: 0; background-color: rgba(0, 0, 0, 0.95); width: 31px; height: 31px; margin-left: 15px;" />
+            </engine:VisualElement>
+            <engine:VisualElement name="buttonsWrapper" style="flex-grow: 1; flex-direction: row; justify-content: space-between;">
+                <engine:Button text="bck&#10;" name="close" />
+                <engine:Button text="check it out" name="see" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

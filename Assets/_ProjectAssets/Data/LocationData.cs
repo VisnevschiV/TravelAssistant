@@ -22,6 +22,8 @@ public class Location
     public GameObject arExperience;
     [SerializeField]
     public List<LocationTag> tags;
+    [Tooltip("just copyPaste long and lang from google maps")]
+    public string mapPosition;
     public bool isLiked;
 }
 

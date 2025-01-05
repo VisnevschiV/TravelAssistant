@@ -25,8 +25,9 @@
 
 		List<GameObject> _spawnedObjects;
 
-		void Start()
+		public void Init(List<Location> locations)
 		{
+			_locationStrings = GetLocationStringsFromList(locations);
 			_locations = new Vector2d[_locationStrings.Length];
 			_spawnedObjects = new List<GameObject>();
 			for (int i = 0; i < _locationStrings.Length; i++)
@@ -35,13 +36,28 @@
 				_locations[i] = Conversions.StringToLatLon(locationString);
 				var instance = Instantiate(_markerPrefab);
 				instance.transform.localPosition = _map.GeoToWorldPosition(_locations[i], true);
+				instance.GetComponent<MapMarker>().SetLocation(locations[i]);
 				instance.transform.localScale = new Vector3(_spawnScale, _spawnScale, _spawnScale);
 				_spawnedObjects.Add(instance);
 			}
 		}
 
+		private string[] GetLocationStringsFromList(List<Location> locations)
+		{
+			List<string> locs = new List<string>();
+			foreach (var loc in locations)
+			{
+				locs.Add(loc.mapPosition);
+			}
+
+			return locs.ToArray();
+		}
 		private void Update()
 		{
+			if (_spawnedObjects.Count ==0)
+			{
+				return;
+			}
 			int count = _spawnedObjects.Count;
 			for (int i = 0; i < count; i++)
 			{
