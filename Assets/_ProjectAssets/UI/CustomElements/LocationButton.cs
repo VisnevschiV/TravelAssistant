@@ -28,11 +28,11 @@ public partial class LocationButton : Button
 
     private void LoadTree()
     {
-        var visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/_ProjectAssets/UI/CustomElements/UXML/LocationButton.uxml");
+        var visualTree =  Resources.Load<VisualTreeAsset>("UXML/LocationButton");
         visualTree.CloneTree(this);
 
         // Load USS
-        var styleSheet = AssetDatabase.LoadAssetAtPath<StyleSheet>("Assets/_ProjectAssets/UI/CustomElements/USS/LocationButton.uss");
+        var styleSheet = Resources.Load<StyleSheet>("USS/LocationButton");
         this.styleSheets.Add(styleSheet);
         this.name = "button";
     }

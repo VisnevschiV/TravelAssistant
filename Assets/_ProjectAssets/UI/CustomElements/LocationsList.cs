@@ -27,11 +27,11 @@ public partial class LocationsList : VisualElement
 
     private void LoadTree()
     {
-        var visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/_ProjectAssets/UI/CustomElements/UXML/LocationsList.uxml");
+        var visualTree = Resources.Load<VisualTreeAsset>("UXML/LocationsList");
         visualTree.CloneTree(this);
 
         // Load USS
-        var styleSheet = AssetDatabase.LoadAssetAtPath<StyleSheet>("Assets/_ProjectAssets/UI/CustomElements/USS/LocationsList.uss");
+        var styleSheet = Resources.Load<StyleSheet>("USS/LocationsList");
         this.styleSheets.Add(styleSheet);
         this.name = "LocationsList";
         this.AddToClassList("scrollContainer");
