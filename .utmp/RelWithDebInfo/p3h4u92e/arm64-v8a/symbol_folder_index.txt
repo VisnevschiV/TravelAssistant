@@ -1,0 +1,1 @@
+D:\unityProj\TravelAssistant\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\cxx\RelWithDebInfo\p3h4u92e\obj\arm64-v8a
