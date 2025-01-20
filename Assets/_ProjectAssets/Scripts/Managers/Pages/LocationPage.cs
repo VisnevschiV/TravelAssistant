@@ -66,7 +66,7 @@ public class LocationPage : Page
 
     private void AudioGuide()
     {
-        PageManager.Instance.PlayAudioGuide(currentLocation);
+        PageManager.Instance.PlayAudioGuidePupUp(currentLocation);
     }
 
     private void Like()

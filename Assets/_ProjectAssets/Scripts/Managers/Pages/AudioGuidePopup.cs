@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 [RequireComponent(typeof(AudioSource))]
-public class AudioGuidePage : Page
+public class AudioGuidePopup : Page
 {
     private AudioSource _audioSource;
     private bool _isPlaying;
@@ -18,17 +18,22 @@ public class AudioGuidePage : Page
         }
     }
 
-    public void Activate(Location location)
+    private void ReadUIDocument()
     {
-        base.Activate();   
         _audioSource = GetComponent<AudioSource>();
         _root.Q<Button>("playpause").clicked += PlayPause;
         _root.Q<Button>("cancel").clicked += Cancel;
+        _audioSlider = _root.Q<Slider>();
+        _audioSlider.lowValue = 0;
+    }
 
+    public void Activate(Location location)
+    {
+        base.Activate();   
+        ReadUIDocument();
         _root.Q<Label>("title").text = location.name;
         _root.Q<Label>("other").text = location.description;
         
-        _audioSlider = _root.Q<Slider>();
         _audioSlider.RegisterValueChangedCallback(OnSliderValueChanged);
         
         AudioClip clip = location.audioGuide;
@@ -37,7 +42,6 @@ public class AudioGuidePage : Page
         _isPlaying = true;
 
         // Set the slider range based on the audio clip duration
-        _audioSlider.lowValue = 0;
         _audioSlider.highValue = clip.length;
     }
 

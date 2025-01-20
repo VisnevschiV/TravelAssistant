@@ -10,7 +10,7 @@ public class Page : MonoBehaviour, IPage
     {
        _root = GetComponent<UIDocument>().rootVisualElement;
     }
-
+    
     public void Activate()
     {
         gameObject.SetActive(true);

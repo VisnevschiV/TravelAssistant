@@ -1,21 +1,39 @@
+using System;
 using UnityEngine;
 
 public class PageManager : MonoSingleton<PageManager>
 {
-    public MainPage mainPage;
-    public LocationPage locationPage;
-    public AudioGuidePage audioGuide;
-    public MapPopUp mapPopUp;
+    [SerializeField]
+    private MainPage mainPage;
+    [SerializeField]
+    private LocationPage locationPage;
+    [SerializeField]
+    private ARPage arPage;
+    [SerializeField]
+    private MapPage mapPage;
+    [SerializeField]
+    private AudioGuidePopup audioGuidePopup;
+    [SerializeField]
+    private MapPopUp mapPopUp;
+
+
+    private void Start()
+    {
+        Debug.Log("Started");
+        ReadAllUIDocuments();
+        MainPage();
+    }
+
 
     public void SetLocationScene(Location location)
     {
-        mainPage.Deactivate();
+        DeactivateAll(); 
         locationPage.Activate(location);
     }
 
-    public void PlayAudioGuide(Location location)
+    public void PlayAudioGuidePupUp(Location location)
     {
-        audioGuide.Activate(location);
+        audioGuidePopup.Activate(location);
     }
 
     public void ShowMapPopUp(Location location)
@@ -25,12 +43,28 @@ public class PageManager : MonoSingleton<PageManager>
 
     public void MainPage()
     {
+        DeactivateAll();
         mainPage.Activate();
-        locationPage.Deactivate();
     }
     
     public void MapPage()
     {
+        DeactivateAll();
+        mapPage.Activate();
+    }
+    
+    private void DeactivateAll()
+    {
         mainPage.Deactivate();
+        locationPage.Deactivate();
+        arPage.Deactivate();
+        audioGuidePopup.Deactivate();
+        mapPopUp.Deactivate();
+        mapPage.Deactivate();
+    }
+
+    private void ReadAllUIDocuments()
+    {
+        
     }
 }
